@@ -1,0 +1,28 @@
+{
+  "name": "API_restfull_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apirestfull.js",
+  "scripts": {
+    "dev": "node_modules/.bin/nodemon --harmony -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbilalbhattirajpoot/API_restfull_express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbilalbhattirajpoot/API_restfull_express/issues"
+  },
+  "homepage": "https://github.com/mbilalbhattirajpoot/API_restfull_express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  }
+}
