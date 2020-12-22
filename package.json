@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/mbilalbhattirajpoot/API_restfull_express#readme",
   "dependencies": {
+    "curl": "^0.1.4",
     "express": "^4.17.1"
   },
   "devDependencies": {

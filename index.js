@@ -6,13 +6,12 @@ const app = express()
 // Morgan
 app.use(morgan('tiny'))
 // First route
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
     res.json({ message: 'Hello world' })
 })
 // Starting server
 app.listen('1337');
 
-const app = express()
 app.use(morgan('tiny'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
