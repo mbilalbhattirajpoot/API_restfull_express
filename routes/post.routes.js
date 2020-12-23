@@ -32,6 +32,20 @@ router.get('/:id', m.mustBeInteger, async (req, res) => {
     })
 })
 
+/* get post by name*/
+router.get('/tags/:name', m.mustbearray, async (req, res) => {
+    const name = req.params.name
+    await post.getPost(name)
+    .then(post => res.json(post))
+    .catch(err => {
+        if (err.status) {
+            res.status(err.status).json({ message: err.message })
+        } else {
+            res.status(500).json({ message: err.message })
+        }
+    })
+})
+
 /* Insert a new post */
 router.post('/', m.checkFieldsPost, async (req, res) => {
     await post.insertPost(req.body)
