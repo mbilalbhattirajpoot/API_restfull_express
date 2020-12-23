@@ -33,7 +33,7 @@ router.get('/:id', m.mustBeInteger, async (req, res) => {
 })
 
 /* get post by name*/
-router.get('/tags/:name', m.mustbearray, async (req, res) => {
+router.get('/:tags', m.mustbearray, async (req, res) => {
     const name = req.params.name
     await post.getPost(name)
     .then(post => res.json(post))
